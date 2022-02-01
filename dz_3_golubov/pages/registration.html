@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Обьедененный автомобильный салон и сервис">
+    <meta name="keywords" content="Автосалон">
+    <title>Автосалон Аэлита</title>
+</head>
+
+<body>
+    <header>
+        <h1>Автосалон Аэлита </h1>
+        <nav>
+            <a href="../index.html">◉ Главное меню|</a>
+            <a href="./registration.html">◉ Регистрация|</a>
+            <a href="./enter_form.html">◉ Авторизация|</a>
+            <a href="./search.html">◉ Поиск|</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <form method="post" action="https://fom.in.ua/echo">
+
+            <img src="https://sm.su/upload/blog/1467802069.jpg" alt="registrarion" width="300" height="200">
+            <h2>Введите Ваши данные для регистрации</h2>
+            <div>
+                <label for="user_name">Имя&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="name" id="user_name" required>
+            </div>
+
+            <div>
+                <label for="user_email">E-mail</label>
+                <input type="email" id="user_email" name="email" required>
+            </div>
+
+            <div>
+                <span>Выберите Ваш пол</span>
+                <label for="gender_male">
+                    <input type="radio" id="gender_male" name="gender" value="мужской">мужской
+                </label>
+                <label for="gender_female">
+                    <input type="radio" id="gender_female" name="gender" value="женский">женский
+                </label>
+            </div>
+
+            <div>
+                <label for="region">Выберите регион </label>
+                <select name="region" id="region">
+                    <option>Регион </option>
+                    <option value="Европа">Европа</option>
+                    <option value="Америка">Америка</option>
+                    <option value="Азия">Азия</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="user_pass1">Введите Ваш пароль&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="password" name="user_pass" placeholder="Введите пароль" required id="user_pass1">
+            </div>
+
+            <div>
+                <label for="user_pass2">Повторите Ваш пароль</label>
+                <input type="password" name="user_pass" placeholder="Повторите пароль" required id="user_pass2">
+            </div>
+
+            <div>
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            <i>По вопросам покупки авто, запчастей, сервисного обслуживания, стоимости и поставок — обращайтесь в
+                автоцентр АЭЛИТА</i>
+        </p>
+        <p>контакты :</p>
+        <ul>
+            <li> Номер телефона <a href="tel:0800304303">0800304303</a></li>
+            <li>Почта <a href="mailto:Aelita@dp.ua">Aelita@dp.ua</a> </li>
+            <li> <a href="https://www.instagram.com/aelita.ua/">Инстаграм</a> </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

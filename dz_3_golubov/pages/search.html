@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Обьедененный автомобильный салон и сервис">
+    <meta name="keywords" content="Автосалон">
+    <title>Автосалон Аэлита</title>
+</head>
+
+<body>
+    <header>
+        <h1>Автосалон Аэлита </h1>
+        <nav>
+            <a href="../index.html">◉ Главное меню|</a>
+            <a href="./registration.html">◉ Регистрация|</a>
+            <a href="./enter_form.html">◉ Авторизация|</a>
+            <a href="./search.html">◉ Поиск|</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <form method="post" action=" https://fom.in.ua/echo ">
+            <div>
+                <p>Выберите тип кузова</p>
+                <input type="radio" id="sedan" name="type_car" value="SEDAN">
+                <label for="sedan">SEDAN</label>
+                <br>
+                <input type="radio" id="coupe" name="type_car" value="COUPE">
+                <label for="coupe">COUPE</label>
+                <br>
+                <input type="radio" id="hatchback" name="type_car" value="HATCHBACK">
+                <label for="hatchback">HATCHBACK</label>
+            </div>
+
+            <hr>
+
+            <div>
+                <p>Выберите год выпуска </p>
+                <input type="range" id="year" name="year" min="2010" max="2022">
+            </div>
+
+            <hr>
+
+            <div>
+                <p>Выберите марку автомобиля </p>
+                <input type="checkbox" id="honda" name="honda" value="Honda">
+                <label for="honda"> Honda</label><br>
+                <input type="checkbox" id="acura" name="acura" value="Acura">
+                <label for="acura"> Acura</label><br>
+                <input type="checkbox" id="kia" name="kia" value="Kia">
+                <label for="kia"> Kia</label> <br>
+                <input type="checkbox" id="citroen" name="citroen" value="Citroen">
+                <label for="citroen"> Citroen</label><br>
+                <input type="checkbox" id="peugeot" name="peugeot" value="Peugeot">
+                <label for="peugeot"> Peugeot</label><br>
+            </div>
+
+            <hr>
+
+            <div>
+                <span>Выберите страну производителя</span>
+                <select name="country">
+                    <option value="Китай">Китай</option>
+                    <option value="Корея">Корея</option>
+                    <option value="Австрия">Австрия</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <div>
+                <label for="carcolor">Выберите цвет Вашего автомобиля</label>
+                <input type="color" id="carcolor" name="carcolor" value="#FFFFFF">
+            </div>
+
+            <hr>
+
+            <div>
+                <p>Выберите ценовой диапазон</p>
+                <label for="price">Цена ₴ </label>
+                <input type="range" id="price" name="price" min="20000" max="500000">
+            </div>
+
+            <hr>
+
+            <div>
+                <p>Выберите тип коробки передач</p>
+                <input type="radio" id="transmission" name="type_transmission" value="Automat">
+                <label for="transmission">Automat</label>
+                <br>
+                <input type="radio" id="mechanical" name="type_transmission" value="Mechanical">
+                <label for="mechanical">Mechanical</label>
+            </div>
+
+            <hr>
+
+            <div>
+                <p>Выберите вид топлива</p>
+                <select name="fuel">
+                    <option value="Бензин">Бензин</option>
+                    <option value="Дизель">Дизель</option>
+                    <option value="Гибрид">Гибрид</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <div>
+                <label for="issue_date">Желаемая дата и время получения авто</label>
+                <input type="datetime-local" id="issue_date" name="issue_date">
+            </div>
+
+            <hr>
+
+            <div>
+                <p>Оставьте ваши коментарии, мы обязательно их учтем при подборе автомобиля</p>
+                <textarea name="comment" id="comment" cols="60" rows="5">Напишите нам</textarea>
+            </div>
+            <br>
+            <button type="submit" name="user_submit">Подтвердить</button>
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            <i>По вопросам покупки авто, запчастей, сервисного обслуживания, стоимости и поставок — обращайтесь в
+                автоцентр АЭЛИТА</i>
+        </p>
+        <p>контакты :</p>
+        <ul>
+            <li> Номер телефона <a href="tel:0800304303">0800304303</a></li>
+            <li>Почта <a href="mailto:Aelita@dp.ua">Aelita@dp.ua</a> </li>
+            <li> <a href="https://www.instagram.com/aelita.ua/">Инстаграм</a> </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
