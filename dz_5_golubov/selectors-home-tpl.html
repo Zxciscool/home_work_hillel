@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Selectors</title>
+	<style>
+		/* стили для задания */
+		.buttons {
+			cursor: pointer;
+			color: blue;
+			text-decoration: underline;
+		}
+
+		.buttons .is-active {
+			cursor: default;
+			color: green;
+			text-decoration: none;
+		}
+
+		/* пример выполнения */
+		.all * {
+			color: red;
+		}
+
+		.all-p p {
+			color: red;
+		}
+
+		.all-li li {
+			color: red;
+		}
+
+		.select-input-checkbox input[type="checkbox"] {
+			width: 20px;
+			height: 20px;
+			box-shadow: 0 0 30px green;
+		}
+
+		.select-all-links-form-footer footer a {
+			color: yellow;
+		}
+
+		/* Старт домашней работы */
+		.select-input-checkbox-id form#box_check input[type="checkbox"] {
+			width: 20px;
+			height: 20px;
+			box-shadow: 0 0 30px green;
+		}
+
+
+		.select-input-text input[type="text"] {
+			box-shadow: 0 0 30px green;
+		}
+
+		.select-form-all form * {
+			box-shadow: 0 0 30px blue;
+			width: 100px;
+
+		}
+
+		.all-a a {
+			color: brown;
+		}
+
+		.all-a-visited a:visited {
+			color: yellow;
+		}
+
+		.all-h H3 {
+			color: yellow;
+		}
+
+		.all-footer footer {
+			box-shadow: 0 0 30px blue;
+		}
+
+		.a-class-list ul.list {
+
+			color: red;
+		}
+
+		.li-a li>a {
+			color: rgb(255, 0, 34);
+
+		}
+
+		.block-message .block-message {
+			box-shadow: 0 0 30px blue;
+		}
+
+		.all-message ul#messages {
+			color: red;
+		}
+
+		.all-footer-elem footer * {
+			box-shadow: 0 0 30px blue;
+		}
+
+		.message-a-hover div.block-message ul#messages li a:hover {
+			color: yellow;
+		}
+
+		.footer-ul footer h3+ul {
+			color: yellow;
+		}
+
+		 .all-body-a>a:active {
+			color: yellow;
+		}
+
+		  .all-body-element > *   {
+			color: gold;
+		}
+	</style>
+</head>
+
+<body>
+	<button class="remove-all">Remove all</button>
+
+	<hr>
+	<!-- значения аттрибута data-name будет пременено к тегу main как класс -->
+	<ul class="buttons">
+		<!-- /* пример выполнения */ -->
+		<li data-name="all">* {color: red}</li>
+		<li data-name="all-p">p {color: red}</li>
+		<li data-name="all-li">li {color: red}</li>
+		<li data-name="select-all-links-form-footer">Найти ссылки в "подвале"</li>
+		<li data-name="select-input-checkbox">найти все input checkbox </li>
+		<!--Старт домашней работы -->
+		<li data-name="select-input-checkbox-id">найти все input checkbox с id box_check </li>
+		<li data-name="select-input-text">Найти все поля ввода </li>
+		<li data-name="select-form-all">Все элементы форм </li>
+		<li data-name="all-a"> Найти все ссылки</li>
+		<li data-name="all-a-visited">Найти все посещенные ссылки</li>
+		<li data-name="all-h">Найти заголовок</li>
+		<li data-name="all-footer">Найти подвал</li>
+		<li data-name="a-class-list">Найти все списки которые имеют класс list</li>
+		<li data-name="li-a">Найти ссылки которе в списке</li>
+		<li data-name="block-message">Найти блок с сообщениями</li>
+		<li data-name="all-message">Найти все сообщения</li>
+		<li data-name="all-footer-elem">Найти все элементы в подвале</li>
+		<li data-name="message-a-hover">Найти ссылки на которые наведен курсор и которые находиться в блоке с
+			сообщениями</li>
+		<li data-name="footer-ul">Найти список который следует за заголовком в подвале</li>
+		<li data-name="all-body-a">Найти ссылки которые "активны" и дети для main</li>
+		<li data-name="all-body-element"> Найти все элементы которые непосредственные потомки (дети) для main</li>
+
+	</ul>
+	<hr>
+
+	<!-- ⬇️Сюда будут добавляться классы из списка выше (значения аттрибута data-name) ⬇️-->
+	<main>
+		<!-- тут можно вставить любую разметку -->
+
+		<ul>
+			<li>
+				<span>3. История создания и развития CSS</span>
+				<ul class="list">
+					<li><span>3.1 Уровень 1 (CSS1)</span></li>
+					<li>
+						<a href="#"><span>3.2 Уровень 2 (CSS2)</span></a>
+						<ul class="list">
+							<li><span>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</span></li>
+						</ul>
+					</li>
+					<li class="theme-color"><span>3.3 Уровень 3 (CSS3)</span></li>
+					<li><a href="#"><span>3.4 Уровень 4 (CSS4)</span></a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<p>CSS — одна из широкого спектра технологий, одобренных консорциумом W3C и получивших общее название «стандарты
+			Web» В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по
+			которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и
+			стандарт CSS.</p>
+
+		<p><a href="#">В начале 1990-х различные</a> браузеры имели свои стили для отображения веб страниц. HTML
+			развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по
+			оформлению информации, поэтому CSS не получил тогда широкого признания.</p>
+
+		<p>Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал
+			развивать CSS.</p>
+
+		<p>В отличие от многих существовавших на <a href="#">тот момент языков стиля</a>, CSS использует наследование от
+			родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее
+			стилях.</p>
+
+		<p>В середине 1990-х Консорциум <a href="#">Всемирной паутины</a> (W3C) стал проявлять интерес к CSS, и в
+			декабре 1996 года была издана рекомендация CSS1.</p>
+
+		<form action="#">
+			<input type="checkbox"> чекбокс 1
+			<input type="checkbox" checked> чекбокс 2
+			<input type="text" id="message">
+		</form>
+
+		<div class="block-message">
+			<h3 id="widget-title">Сообщения:</h3>
+			<ul id="messages" class="list">
+				<li id="message-1">Сообщение 1</li>
+				<li id="message-2">Сообщение 2</li>
+				<li id="message-3" data-action="delete">Сообщение 3</li>
+				<li id="message-4" data-action="edit do-not-delete">Сообщение 4</li>
+				<li id="message-5" data-action="edit delete">Сообщение 5</li>
+				<li><a href="#">...</a></li>
+			</ul>
+		</div>
+
+		<a href="https://site.com/list.zip">Ссылка на архив</a>
+		<a href="https://site.com/list.pdf">..И на PDF</a>
+
+		<br> <br>
+
+		<form action="#" id="box_check">
+			<input type="checkbox"> чекбокс 3
+			<input type="checkbox" checked> чекбокс 4
+			<input type="text" id="message">
+		</form>
+
+		<footer>
+			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, ipsam! Quibusdam eos ducimus veniam
+				minima
+				dolorem suscipit voluptates ex temporibus, sit molestias sequi accusantium odit perspiciatis voluptas
+				earum
+				quaerat rem.
+			</h3>
+
+			<ul class="list">
+				<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+				<li class="first"><a href="#">Commodi reiciendis iure, non laborum.</a></li>
+				<li><a href="#">Nostrum doloribus laborum, asperiores in.</a></li>
+			</ul>
+
+			<ul>
+				<li class="first"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+				<li><a href="#">Commodi reiciendis iure, non laborum.</a></li>
+				<li><a href="#">Nostrum doloribus laborum, asperiores in.</a></li>
+			</ul>
+		</footer>
+	</main>
+
+	<!-- Сценарий для задания ☢ не трогать -->️
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+	<script>
+		(function ($) {
+			var $buttons = $('.buttons').find('li'),
+				$main = $('main'),
+				$removeBtn = $('.remove-all');
+
+			$removeBtn.on('click', removeAll);
+
+			$buttons.on('click', function (event) {
+				event.preventDefault();
+
+				var $target = $(this);
+				var dataClass = $target.data('name');
+
+				removeAll();
+
+				if (dataClass.split(' ').length > 1) {
+					alert('remove spaces from attr value');
+					return;
+				}
+
+				if (dataClass === '') {
+					alert('attr value is empty');
+					return;
+				}
+
+				$target.addClass('is-active');
+
+				$main
+					.addClass(dataClass)
+					.addClass('is-active');
+			});
+
+			function removeAll() {
+				$main.removeAttr('class');
+				$buttons.removeClass('is-active');
+			}
+		})(jQuery);
+	</script>
+</body>
+
+</html>
