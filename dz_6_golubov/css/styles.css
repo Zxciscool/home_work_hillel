@@ -1,0 +1,104 @@
+ h1, h2 {
+     color: #ff7300;
+ }
+
+ h3 {
+     color: darkblue;
+ }
+
+ #navbar li {
+     display: inline;
+ }
+
+ #navbar {
+     list-style-type: none;
+     border: 2px solid black;
+     width: 550px;
+     text-align: center;
+     background-color: #c0c0c0;
+     ;
+ }
+
+ #navbar a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: bold;
+     display: inline-block;
+     width: 110px;
+ }
+
+ #navbar a:hover {
+     background-color: #ff7300;
+ }
+
+ .box {
+     border: 2px solid black;
+     width: 1000px;
+     box-sizing: border-box;
+     margin-bottom: 30px;
+ }
+
+ .card {
+     display: inline-block;
+     width: 33%;
+     text-align: center;
+     font-family: arial;
+ }
+
+ .box .card .logo {
+     display: inline-block;
+     width: 82px;
+     height: 100px;
+ }
+
+ img {
+     height: 100%;
+     max-width: 82px;
+ }
+
+ .price {
+     color: grey;
+     font-size: 22px;
+ }
+
+ .box .card .decription {
+     color: darkblue;
+ }
+
+ .card button {
+     border: none;
+     outline: 0;
+     padding: 12px;
+     color: white;
+     background-color: #000;
+     text-align: center;
+     width: 100%;
+     font-size: 18px;
+ }
+
+ .card button:hover {
+     opacity: 0.7;
+ }
+
+ .footer_box {
+     width: 1000px;
+     box-sizing: border-box;
+ }
+
+ .footer_box .footer_web {
+     display: inline-block;
+     width: 33%;
+     text-align: center;
+ }
+
+ .footer_box .footer_mob {
+     display: inline-block;
+     width: 33%;
+     text-align: center;
+ }
+
+ .footer_box .footer_blockquote {
+     display: inline-block;
+     width: 33%;
+     text-align: center;
+ }
