@@ -39,6 +39,7 @@ header nav ul li a {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
+    color:#000000
 }
 
 header nav ul li.active a {
