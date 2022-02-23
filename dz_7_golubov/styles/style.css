@@ -1,0 +1,167 @@
+body {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.64;
+    color: #000000;
+}
+
+.bg-primary {
+    background-color: #EEEFF1;
+}
+
+.bg-secondary {
+    background-color: #34547A;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+    padding: 80px 0 141px 0;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li:not(:last-child) {
+    margin-right: 42px;
+}
+
+header nav ul li a {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#000000
+}
+
+header nav ul li.active a {
+    font-weight: 500;
+    color: #34547A;
+}
+
+header h1 {
+    margin-top: 161px;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+header .content {
+    margin: 60px 0;
+    color: #727272;
+    width: 540px;
+}
+
+header button {
+    width: 225px;
+    height: 65px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.about-me {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 50px;
+}
+
+.about-me .content {
+    color: #727272;
+    width: 540px;
+    margin: 0 auto;
+}
+
+.projects {
+    padding: 100px 0;
+    color: #FFFFFF;
+}
+
+.projects .project-item {
+    display: inline-block;
+    width: 141px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.projects .project-item:not(:last-child) {
+    margin-right: 48px;
+}
+
+.projects .project-item .logo {
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.projects .project-item .count {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.projects .count h3 {
+
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.projects .count span {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.how-work {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.how-work h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.how-work .content {
+    width: 540px;
+    color: #727272;
+    margin: 50px auto;
+}
+
+.how-work .video video {
+    width: 100%;
+}
+
+footer {
+    color: #FFFFFF;
+    padding: 50px 0;
+}
+
+footer h3 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+footer .copyrights {
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 21px;
+}
