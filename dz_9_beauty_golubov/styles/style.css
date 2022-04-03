@@ -115,13 +115,13 @@ header nav a:not(:last-child) {
 
 main .promo {
     padding: 180px 0;
-    width: 1920px;
+    max-width: 1920px;
     background: url('../img/promo-fon.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin: 0 auto;
-
 }
+
 
 
 main .promo h2 {
@@ -412,14 +412,18 @@ footer .contacts button {
     vertical-align: middle;
 }
 
+footer .contacts a {
+    display: inline-block;
+}
+
 footer .contacts img {
     box-sizing: border-box;
     border-radius: 18px;
     border: 2px solid #F13C6E;
-    padding: 9px 5px;
+    padding: 8px 5px;
     width: 40px;
     height: 40px;
-    vertical-align: -50px;
+    vertical-align: -40px;
 }
 
 footer .contacts img:not(:last-child) {
@@ -435,6 +439,13 @@ footer .footer-bar p {
     font-size: 12px;
     line-height: 14px;
     color: #828282;
+}
+
+footer .footer-bar a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+    text-decoration: none;
 }
 
 footer .footer-bar .left-bar {
