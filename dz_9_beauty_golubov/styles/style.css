@@ -1,0 +1,446 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #000000;
+    line-height: 16px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.top-bar {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.top-bar nav a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.top-bar nav a:not(:last-child) {
+    margin-right: 30px;
+}
+
+header {
+    background-color: white;
+    padding-top: 20px;
+}
+
+.left {
+    float: left;
+
+}
+
+.right {
+    float: right;
+    height: 80px;
+    padding: 15px 0;
+
+}
+
+header .header-logo img {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .header-logo h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    color: #F13C6E;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+header .header-logo a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: sub;
+}
+
+header .header-logo button {
+    border: 2px solid #F13C6E;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: #FFFFFF;
+    padding: 12px 25px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 19px;
+    vertical-align: middle;
+}
+
+header hr {
+    border: 1px solid #EFEFEF;
+}
+
+header nav {
+    padding: 30px 0;
+    text-align: center;
+}
+
+header nav a {
+    line-height: 19px;
+    text-decoration: none;
+    color: #000000;
+}
+
+header nav a:not(:last-child) {
+    margin-right: 40px;
+}
+
+main .promo {
+    padding: 180px 0;
+    width: 1920px;
+    background: url('../img/promo-fon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+
+}
+
+
+main .promo h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+main .promo p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 50px 0;
+    width: 320px;
+}
+
+main .promo a {
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 2px solid #FFFFFF;
+    background: #F13C6E;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    display: inline-block;
+    width: 170px;
+}
+
+main .cards {
+    padding: 80px 0 100px 0;
+}
+
+main .cards h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Описание карт товара */
+.card {
+    float: left;
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    padding: 25px 30px;
+}
+
+.card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.card p.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 20px 0;
+    color: #333333;
+}
+
+.card p.price {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background: #F13C6E;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+main .bonus .gift {
+    display: inline-block;
+    width: 540px;
+    height: 210px;
+    background-color: #F13C6E;
+    vertical-align: middle;
+    padding: 35px 40px;
+    margin-right: 30px;
+}
+
+main .bonus .gift .context {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+main .bonus .gift .convert {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+main .bonus .gift h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+main .bonus .gift p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 231px;
+    margin: 25px 0;
+}
+
+main .bonus .gift input {
+    background: #FFFFFF;
+    border-radius: 30px;
+    border-color: #F13C6E;
+    line-height: 16px;
+    color: #C4C4C4;
+    padding: 10px;
+    padding-left: 25px;
+}
+
+main .bonus .gift img {
+    width: 140px;
+    height: 105px;
+
+}
+
+main .bonus .welcome {
+    display: inline-block;
+    width: 540px;
+    height: 210px;
+    background-color: #F13C6E;
+    vertical-align: middle;
+    padding: 35px 40px;
+}
+
+main .bonus .welcome .context {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 85px;
+}
+
+main .bonus .welcome .car {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main .bonus .welcome h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+main .bonus .welcome p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    width: 150px;
+    margin: 30px 0;
+    color: #FFFFFF;
+}
+
+main .bonus .welcome a {
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #F13C6E;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+main .logotips {
+    padding-top: 100px;
+
+
+}
+
+main .logotips .logo-block {
+    background-color: #FFFFFF;
+
+}
+
+main .logotips .logo-block a {
+    display: block;
+    float: left;
+    padding: 35px 60px;
+}
+
+main .logotips .logo-block a img {
+    width: 150px;
+    height: 50px;
+}
+
+main .recently-viewed {
+    padding: 80px 0;
+}
+
+main .recently-viewed h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #FFFFFF;
+}
+
+footer nav {
+    padding: 60px 0 90px 0;
+}
+
+footer nav ul {
+    width: 100px;
+    float: left;
+}
+
+footer nav ul:not(:last-child) {
+    margin-right: 186px;
+}
+
+footer nav ul li a {
+    font-size: 12px;
+    line-height: 28px;
+    color: #828282;
+    text-decoration: none;
+}
+
+footer nav ul li a.first-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140.62%;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+footer nav ul li hr {
+    width: 255px;
+    border: 1px solid #EFEFEF;
+    margin: 30px 0;
+}
+
+footer .footer-raw {
+    border: 1px solid #EFEFEF;
+
+}
+
+footer .contacts {
+    padding: 30px 0;
+}
+
+footer .contacts a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: sub;
+}
+
+footer .contacts button {
+    border: 2px solid #F13C6E;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: #FFFFFF;
+    padding: 12px 25px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 19px;
+    vertical-align: middle;
+}
+
+footer .contacts img {
+    box-sizing: border-box;
+    border-radius: 18px;
+    border: 2px solid #F13C6E;
+    padding: 9px 5px;
+    width: 40px;
+    height: 40px;
+    vertical-align: -50px;
+}
+
+footer .contacts img:not(:last-child) {
+    margin-right: 20px;
+}
+
+footer .footer-bar {
+    background: #EFEFEF;
+    padding: 25px 0;
+}
+
+footer .footer-bar p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+}
+
+footer .footer-bar .left-bar {
+    float: left;
+}
+
+footer .footer-bar .right-bar {
+    float: right;
+}
